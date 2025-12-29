@@ -1,0 +1,37 @@
+{
+  "name": "@divyank96/guardial-react-sdk",
+  "version": "0.1.2",
+  "description": "Guardial React SDK - One-liner security integration for React applications",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "npx tsc",
+    "dev": "npx tsc --watch",
+    "prepublishOnly": "npm install && npm run build"
+  },
+  "keywords": [
+    "react",
+    "security",
+    "owasp",
+    "llm-firewall",
+    "guardial"
+  ],
+  "author": {
+    "name": "Divyank Vijayvergiya",
+    "email": "divyank@guardial.in"
+  },
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=16.8.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.27",
+    "@types/react": "^18.0.0",
+    "react": "^18.0.0",
+    "typescript": "^5.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

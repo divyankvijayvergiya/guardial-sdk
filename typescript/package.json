@@ -1,0 +1,92 @@
+{
+  "name": "@divyank96/guardial-sveltekit-sdk",
+  "version": "0.2.5",
+  "description": "Guardial SDK for SvelteKit - TypeScript-first security SDK with OWASP Top 10 Detection & LLM Prompt Firewall",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./hooks": {
+      "import": "./dist/hooks.js",
+      "types": "./dist/hooks.d.ts"
+    },
+    "./client": {
+      "import": "./dist/client.js",
+      "types": "./dist/client.d.ts"
+    },
+    "./zod": {
+      "import": "./dist/zod.js",
+      "types": "./dist/zod.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "type-check": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "sveltekit",
+    "svelte",
+    "typescript",
+    "security",
+    "owasp",
+    "llm-firewall",
+    "prompt-injection",
+    "api-security",
+    "web-security",
+    "sql-injection",
+    "xss-protection",
+    "guardial",
+    "cybersecurity",
+    "threat-detection"
+  ],
+  "author": {
+    "name": "Divyank Vijayvergiya",
+    "email": "divyank@guardial.in",
+    "url": "https://github.com/divyankvijayvergiya"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/divyankvijayvergiya/guardial-backend.git",
+    "directory": "sdk/typescript"
+  },
+  "bugs": {
+    "url": "https://github.com/divyankvijayvergiya/guardial-backend/issues"
+  },
+  "homepage": "https://github.com/divyankvijayvergiya/guardial-backend#readme",
+  "peerDependencies": {
+    "@sveltejs/kit": "^2.0.0",
+    "svelte": "^5.0.0"
+  },
+  "peerDependenciesMeta": {
+    "zod": {
+      "optional": true
+    }
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@sveltejs/kit": "^2.47.1",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.9.3",
+    "zod": "^4.1.12"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}

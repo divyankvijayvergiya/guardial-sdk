@@ -1,0 +1,36 @@
+# Source files
+src/
+examples/
+*.ts
+!*.d.ts
+
+# Development files
+node_modules/
+tsconfig.json
+.gitignore
+.npmignore
+
+# Documentation (keep README and LICENSE)
+INTEGRATION_GUIDE.md
+QUICKSTART.md
+
+# Environment files
+.env
+.env.*
+*.log
+
+# Build artifacts (keep dist/)
+*.tsbuildinfo
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+
+

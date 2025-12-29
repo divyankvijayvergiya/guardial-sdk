@@ -1,0 +1,58 @@
+{
+  "name": "guardial-js-sdk",
+  "version": "0.3.4",
+  "description": "Guardial JavaScript SDK - Real-time OWASP Top 10 Detection & LLM Prompt Firewall",
+  "main": "guardial.js",
+  "module": "guardial.js",
+  "types": "guardial.d.ts",
+  "scripts": {
+    "build": "echo 'No build step required for vanilla JS'",
+    "test": "echo 'Tests not implemented yet'",
+    "lint": "echo 'Linting not configured yet'",
+    "prepublishOnly": "npm test"
+  },
+  "keywords": [
+    "security",
+    "owasp",
+    "llm-firewall",
+    "prompt-injection",
+    "api-security",
+    "web-security",
+    "sql-injection",
+    "xss-protection",
+    "guardial",
+    "cybersecurity",
+    "threat-detection"
+  ],
+  "author": {
+    "name": "Divyank Vijayvergiya",
+    "email": "divyank@guardial.in",
+    "url": "https://github.com/divyankvijayvergiya"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/divyankvijayvergiya/guardial-js-sdk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/divyankvijayvergiya/guardial-js-sdk/issues"
+  },
+  "homepage": "https://github.com/divyankvijayvergiya/guardial-js-sdk#readme",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "files": [
+    "guardial.js",
+    "guardial.d.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}

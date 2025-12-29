@@ -1,0 +1,25 @@
+# Development files
+node_modules/
+.gitignore
+.npmignore
+
+# Documentation (keep README and LICENSE)
+examples/
+
+# Environment files
+.env
+.env.*
+*.log
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+
+
