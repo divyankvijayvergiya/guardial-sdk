@@ -29,9 +29,9 @@ import (
 func main() {
     // Initialize Guardial client
     config := &guardial.Config{
-        APIKey:     "grd_live_zoop_123456789abcdef", // Your API key
-        Endpoint:   "https://api.guardial.in",       // Your Guardial endpoint
-        CustomerID: "live.zoop.one",                 // Your customer ID
+        APIKey:     "your-api-key-here",             // Your API key
+        Endpoint:   "https://api.guardial.in",        // Your Guardial endpoint
+        CustomerID: "your-customer-id",               // Your customer ID
         Debug:      true,                            // Enable debug logging
     }
     
@@ -97,7 +97,7 @@ event := &guardial.SecurityEventRequest{
     Headers:     map[string]string{"Authorization": "Bearer token"},
     QueryParams: "filter=admin",
     RequestBody: "",
-    CustomerID:  "live.zoop.one",
+    CustomerID:  "your-customer-id",
     HasAuth:     true,
     CountryCode: "US",
     SessionID:   "session_123",
@@ -153,9 +153,9 @@ import (
 func main() {
     // Initialize Guardial
     config := &guardial.Config{
-        APIKey:     "grd_live_zoop_123456789abcdef",
+        APIKey:     "your-api-key-here",
         Endpoint:   "https://api.guardial.in",
-        CustomerID: "live.zoop.one",
+        CustomerID: "your-customer-id",
     }
     client := guardial.NewClient(config)
     
@@ -193,9 +193,9 @@ import (
 func main() {
     // Initialize Guardial
     config := &guardial.Config{
-        APIKey:     "grd_live_zoop_123456789abcdef",
+        APIKey:     "your-api-key-here",
         Endpoint:   "https://api.guardial.in",
-        CustomerID: "live.zoop.one",
+        CustomerID: "your-customer-id",
     }
     client := guardial.NewClient(config)
     
@@ -287,9 +287,9 @@ if err != nil {
 ### Environment Variables
 
 ```bash
-export GUARDIAL_API_KEY="grd_live_zoop_123456789abcdef"
+export GUARDIAL_API_KEY="your-api-key-here"
 export GUARDIAL_ENDPOINT="https://api.guardial.in"
-export GUARDIAL_CUSTOMER_ID="live.zoop.one"
+export GUARDIAL_CUSTOMER_ID="your-customer-id"
 export GUARDIAL_DEBUG="true"
 ```
 

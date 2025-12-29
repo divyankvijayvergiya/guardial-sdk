@@ -20,9 +20,9 @@ import GuardialSDK from '@divyankvijayvergiya/guardial-js-sdk';
 
 // Initialize Guardial client
 const guardial = new GuardialSDK({
-  apiKey: 'grd_live_zoop_123456789abcdef', // Your API key
-  endpoint: 'https://api.guardial.in',      // Your Guardial endpoint
-  customerId: 'live.zoop.one',             // Your customer ID
+  apiKey: 'your-api-key-here',               // Your API key
+  endpoint: 'https://api.guardial.in',        // Your Guardial endpoint
+  customerId: 'your-customer-id',            // Your customer ID
   debug: true,                             // Enable debug logging
 });
 
@@ -75,7 +75,7 @@ const event = {
   headers: { 'Authorization': 'Bearer token' },
   queryParams: 'filter=admin',
   requestBody: '',
-  customerId: 'live.zoop.one',
+  customerId: 'your-customer-id',
   hasAuth: true,
   countryCode: 'US',
   sessionId: 'session_123'
@@ -117,9 +117,9 @@ const GuardialSDK = require('@divyankvijayvergiya/guardial-js-sdk');
 
 const app = express();
 const guardial = new GuardialSDK({
-  apiKey: 'grd_live_zoop_123456789abcdef',
+  apiKey: 'your-api-key-here',
   endpoint: 'https://api.guardial.in',
-  customerId: 'live.zoop.one'
+  customerId: 'your-customer-id'
 });
 
 // Security middleware
@@ -154,7 +154,7 @@ function App() {
   const [guardial] = useState(() => new GuardialSDK({
     apiKey: process.env.NEXT_PUBLIC_GUARDIAL_API_KEY,
     endpoint: process.env.NEXT_PUBLIC_GUARDIAL_ENDPOINT,
-    customerId: 'live.zoop.one'
+    customerId: 'your-customer-id'
   }));
 
   const fetchData = async () => {
@@ -185,9 +185,9 @@ const app = createApp({
   data() {
     return {
       guardial: new GuardialSDK({
-        apiKey: 'grd_live_zoop_123456789abcdef',
+        apiKey: 'your-api-key-here',
         endpoint: 'https://api.guardial.in',
-        customerId: 'live.zoop.one'
+        customerId: 'your-customer-id'
       })
     };
   },
@@ -255,9 +255,9 @@ try {
 ### Environment Variables
 
 ```bash
-export GUARDIAL_API_KEY="grd_live_zoop_123456789abcdef"
+export GUARDIAL_API_KEY="your-api-key-here"
 export GUARDIAL_ENDPOINT="https://api.guardial.in"
-export GUARDIAL_CUSTOMER_ID="live.zoop.one"
+export GUARDIAL_CUSTOMER_ID="your-customer-id"
 export GUARDIAL_DEBUG="true"
 ```
 
