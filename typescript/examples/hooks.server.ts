@@ -12,7 +12,7 @@ import type { Handle } from '@sveltejs/kit';
 const guardialHandle = createGuardialHandle({
   config: {
     apiKey: process.env.GUARDIAL_API_KEY!,
-    endpoint: process.env.GUARDIAL_ENDPOINT || 'https://api.guardial.com',
+    endpoint: process.env.GUARDIAL_ENDPOINT || 'https://api.guardial.in',
     customerId: 'your-app-name', // Change this!
     debug: process.env.NODE_ENV === 'development'
   },

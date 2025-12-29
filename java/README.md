@@ -39,7 +39,7 @@ import com.guardial.sdk.*;
 // Initialize Guardial client
 GuardialConfig config = new GuardialConfig.Builder()
     .apiKey("your-api-key-here")
-    .endpoint("https://api.guardial.com")
+    .endpoint("https://api.guardial.in")
     .customerId("your-customer-id")
     .debug(true)
     .build();
@@ -91,7 +91,7 @@ Add to your `application.properties`:
 
 ```properties
 guardial.api-key=${GUARDIAL_API_KEY}
-guardial.endpoint=https://api.guardial.com
+guardial.endpoint=https://api.guardial.in
 guardial.customer-id=your-customer-id
 guardial.enabled=true
 guardial.fail-open=true
@@ -151,7 +151,7 @@ GuardialClient client = new GuardialClient();
 // Custom configuration
 GuardialConfig config = new GuardialConfig.Builder()
     .apiKey("your-api-key")
-    .endpoint("https://api.guardial.com")
+    .endpoint("https://api.guardial.in")
     .customerId("your-customer-id")
     .debug(true)
     .timeoutSeconds(30)
@@ -308,7 +308,7 @@ public class WebConfig implements WebMvcConfigurer {
 
 ```bash
 export GUARDIAL_API_KEY="your-api-key-here"
-export GUARDIAL_ENDPOINT="https://api.guardial.com"
+export GUARDIAL_ENDPOINT="https://api.guardial.in"
 export GUARDIAL_CUSTOMER_ID="your-customer-id"
 export GUARDIAL_DEBUG="true"
 ```
@@ -318,7 +318,7 @@ export GUARDIAL_DEBUG="true"
 ```properties
 # application.properties
 guardial.api-key=${GUARDIAL_API_KEY}
-guardial.endpoint=${GUARDIAL_ENDPOINT:https://api.guardial.com}
+guardial.endpoint=${GUARDIAL_ENDPOINT:https://api.guardial.in}
 guardial.customer-id=${GUARDIAL_CUSTOMER_ID}
 guardial.enabled=true
 guardial.fail-open=true
@@ -396,9 +396,9 @@ class LLMGuardResponse {
 
 ## Support
 
-- **Documentation**: https://docs.guardial.com
+- **Documentation**: https://docs.guardial.in
 - **GitHub Issues**: https://github.com/guardial/java-sdk/issues
-- **Email Support**: support@guardial.com
+- **Email Support**: support@guardial.in
 
 ## License
 

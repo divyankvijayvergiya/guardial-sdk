@@ -9,7 +9,7 @@ Set these environment variables (SDKs auto-detect them):
 ```bash
 export GUARDIAL_API_KEY=your_api_key_here
 export GUARDIAL_CUSTOMER_ID=your_customer_id
-export GUARDIAL_ENDPOINT=https://api.guardial.com  # Optional, defaults to this
+export GUARDIAL_ENDPOINT=https://api.guardial.in  # Optional, defaults to this
 export GUARDIAL_DEBUG=true  # Optional, for debugging
 ```
 

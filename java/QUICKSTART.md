@@ -25,7 +25,7 @@ dependencies {
 Add to `application.properties`:
 ```properties
 guardial.api-key=${GUARDIAL_API_KEY}
-guardial.endpoint=https://api.guardial.com
+guardial.endpoint=https://api.guardial.in
 guardial.customer-id=your-customer-id
 guardial.enabled=true
 ```
@@ -75,7 +75,7 @@ public ResponseEntity<?> chat(@RequestBody Map<String, String> request) {
 ```java
 GuardialConfig config = new GuardialConfig.Builder()
     .apiKey(System.getenv("GUARDIAL_API_KEY"))
-    .endpoint("https://api.guardial.com")
+    .endpoint("https://api.guardial.in")
     .customerId("my-app")
     .build();
 
@@ -99,7 +99,7 @@ if (!analysis.isAllowed()) {
 
 ```bash
 export GUARDIAL_API_KEY="your-api-key-here"
-export GUARDIAL_ENDPOINT="https://api.guardial.com"
+export GUARDIAL_ENDPOINT="https://api.guardial.in"
 export GUARDIAL_CUSTOMER_ID="your-customer-id"
 ```
 
@@ -130,7 +130,7 @@ export GUARDIAL_CUSTOMER_ID="your-customer-id"
 
 - **Documentation**: See [README.md](README.md)
 - **Issues**: https://github.com/guardial/java-sdk/issues
-- **Email**: support@guardial.com
+- **Email**: support@guardial.in
 
 
 

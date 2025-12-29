@@ -35,7 +35,7 @@ type Config struct {
 // DefaultConfig returns a default configuration
 func DefaultConfig() *Config {
 	return &Config{
-		Endpoint:   "https://api.guardial.com",
+		Endpoint:   "https://api.guardial.in",
 		CustomerID: "default",
 		Debug:      false,
 		Timeout:    30 * time.Second,

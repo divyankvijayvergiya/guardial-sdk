@@ -44,7 +44,7 @@ function getConfigFromEnv(config?: GuardialConfig): Required<GuardialConfig> {
   
   return {
     apiKey: config?.apiKey || getEnvVar('REACT_APP_GUARDIAL_API_KEY') || '',
-    endpoint: config?.endpoint || getEnvVar('REACT_APP_GUARDIAL_ENDPOINT') || 'https://api.guardial.com',
+    endpoint: config?.endpoint || getEnvVar('REACT_APP_GUARDIAL_ENDPOINT') || 'https://api.guardial.in',
     customerId: config?.customerId || getEnvVar('REACT_APP_GUARDIAL_CUSTOMER_ID') || 'default',
     debug: config?.debug !== undefined ? config.debug : (getEnvVar('REACT_APP_GUARDIAL_DEBUG') === 'true')
   };

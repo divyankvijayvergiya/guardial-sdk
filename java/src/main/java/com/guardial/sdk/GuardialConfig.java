@@ -11,7 +11,7 @@ public class GuardialConfig {
     private int timeoutSeconds;
 
     public GuardialConfig() {
-        this.endpoint = "https://api.guardial.com";
+        this.endpoint = "https://api.guardial.in";
         this.customerId = "default";
         this.debug = false;
         this.timeoutSeconds = 30;

@@ -8,7 +8,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 @ConfigurationProperties(prefix = "guardial")
 public class GuardialProperties {
     private String apiKey;
-    private String endpoint = "https://api.guardial.com";
+    private String endpoint = "https://api.guardial.in";
     private String customerId;
     private boolean enabled = true;
     private boolean failOpen = true; // Allow requests if analysis fails

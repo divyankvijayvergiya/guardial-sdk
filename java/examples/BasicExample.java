@@ -12,7 +12,7 @@ public class BasicExample {
         // Initialize Guardial client
         GuardialConfig config = new GuardialConfig.Builder()
                 .apiKey(System.getenv("GUARDIAL_API_KEY"))
-                .endpoint(System.getenv().getOrDefault("GUARDIAL_ENDPOINT", "https://api.guardial.com"))
+                .endpoint(System.getenv().getOrDefault("GUARDIAL_ENDPOINT", "https://api.guardial.in"))
                 .customerId("java-example")
                 .debug(true)
                 .timeoutSeconds(30)

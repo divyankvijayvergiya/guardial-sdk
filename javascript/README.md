@@ -296,9 +296,9 @@ const config = {
 
 ## Support
 
-- **Documentation**: https://docs.guardial.com
+- **Documentation**: https://docs.guardial.in
 - **GitHub Issues**: https://github.com/divyankvijayvergiya/guardial-js-sdk/issues
-- **Email Support**: support@guardial.com
+- **Email Support**: support@guardial.in
 - **Discord Community**: https://discord.gg/guardial
 
 ## License

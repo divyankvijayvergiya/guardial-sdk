@@ -14,7 +14,7 @@ func main() {
 	// Initialize Guardial client
 	config := &guardial.Config{
 		APIKey:     os.Getenv("GUARDIAL_API_KEY"),  // "grd_live_zoop_123456789abcdef"
-		Endpoint:   os.Getenv("GUARDIAL_ENDPOINT"), // "https://api.guardial.com"
+		Endpoint:   os.Getenv("GUARDIAL_ENDPOINT"), // "https://api.guardial.in"
 		CustomerID: "live.zoop.one",                // Your customer ID
 		Debug:      true,                           // Enable debug logging
 	}

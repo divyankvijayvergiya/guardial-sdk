@@ -50,7 +50,7 @@ Create `.env` file:
 
 ```bash
 GUARDIAL_API_KEY=your-api-key-here
-GUARDIAL_ENDPOINT=https://api.guardial.com
+GUARDIAL_ENDPOINT=https://api.guardial.in
 ```
 
 ### Step 4: Integrate SDK
@@ -100,8 +100,8 @@ const guardial = new GuardialSDK({
 ## 🆘 Support
 
 - **Dashboard:** https://dashboard.guardial.in
-- **Email:** support@guardial.com
-- **Documentation:** https://docs.guardial.com
+- **Email:** support@guardial.in
+- **Documentation:** https://docs.guardial.in
 
 
 

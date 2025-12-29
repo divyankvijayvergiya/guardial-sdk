@@ -13,7 +13,7 @@ class GuardialSDK {
     constructor(config = {}) {
         this.config = {
             apiKey: config.apiKey || '',
-            endpoint: config.endpoint || 'https://api.guardial.com',
+            endpoint: config.endpoint || 'https://api.guardial.in',
             customerId: config.customerId || 'default',
             debug: config.debug || false,
             ...config

@@ -22,7 +22,7 @@ class GuardialConfig:
                  customer_id: Optional[str] = None, debug: bool = False, timeout: int = 30):
         # Auto-detect from environment variables
         self.api_key = api_key or os.getenv('GUARDIAL_API_KEY', '')
-        self.endpoint = endpoint or os.getenv('GUARDIAL_ENDPOINT', 'https://api.guardial.com')
+        self.endpoint = endpoint or os.getenv('GUARDIAL_ENDPOINT', 'https://api.guardial.in')
         self.customer_id = customer_id or os.getenv('GUARDIAL_CUSTOMER_ID', 'default')
         self.debug = debug or os.getenv('GUARDIAL_DEBUG', 'false').lower() == 'true'
         self.timeout = timeout

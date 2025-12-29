@@ -167,9 +167,9 @@ func main() {
 
 - **📖 [JavaScript SDK Documentation](./javascript/README.md)**
 - **📖 [Go SDK Documentation](./go/README.md)**
-- **🌐 [API Documentation](https://docs.guardial.com)**
-- **🎯 [Integration Guides](https://docs.guardial.com/integration)**
-- **🔧 [Configuration Reference](https://docs.guardial.com/config)**
+- **🌐 [API Documentation](https://docs.guardial.in)**
+- **🎯 [Integration Guides](https://docs.guardial.in/integration)**
+- **🔧 [Configuration Reference](https://docs.guardial.in/config)**
 
 ## 🤝 Contributing
 
@@ -188,10 +188,10 @@ cd ../go && go mod tidy
 
 ## 📞 Support
 
-- **📧 Email**: support@guardial.com
+- **📧 Email**: support@guardial.in
 - **💬 Discord**: [Join our community](https://discord.gg/guardial)
 - **�� Issues**: [GitHub Issues](https://github.com/divyankvijayvergiya/guardial-sdk/issues)
-- **📖 Documentation**: [docs.guardial.com](https://docs.guardial.com)
+- **📖 Documentation**: [docs.guardial.in](https://docs.guardial.in)
 
 ## 📄 License
 
@@ -202,4 +202,4 @@ MIT License - see [LICENSE](LICENSE) file for details.
 **Ready to secure your application?** Get started with Guardial SDKs today! 🚀
 
 [![Get API Key](https://img.shields.io/badge/Get%20API%20Key-dashboard.guardial.in-blue)](https://dashboard.guardial.in)
-[![View Documentation](https://img.shields.io/badge/View%20Docs-docs.guardial.com-green)](https://docs.guardial.com)
+[![View Documentation](https://img.shields.io/badge/View%20Docs-docs.guardial.in-green)](https://docs.guardial.in)
