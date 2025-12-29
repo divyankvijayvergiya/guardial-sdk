@@ -7,15 +7,15 @@ import (
 	"os"
 
 	"github.com/gin-gonic/gin"
-	guardial "github.com/guardial/go-sdk"
+	"github.com/guardial/go-sdk"
 )
 
 func main() {
 	// Initialize Guardial client
 	config := &guardial.Config{
-		APIKey:     os.Getenv("GUARDIAL_API_KEY"),  // "your-api-key-here"
+		APIKey:     os.Getenv("GUARDIAL_API_KEY"),  // "grd_live_zoop_123456789abcdef"
 		Endpoint:   os.Getenv("GUARDIAL_ENDPOINT"), // "https://api.guardial.com"
-		CustomerID: "your-customer-id",             // Your customer ID
+		CustomerID: "live.zoop.one",                // Your customer ID
 		Debug:      true,                           // Enable debug logging
 	}
 
@@ -93,7 +93,7 @@ func main() {
 		c.JSON(http.StatusOK, gin.H{
 			"status":   "healthy",
 			"guardial": health,
-			"service":  "your-api-service",
+			"service":  "live.zoop.one API",
 		})
 	})
 
@@ -136,7 +136,7 @@ func main() {
 	})
 
 	// Start server
-	log.Println("Starting your-api-service on :8080")
+	log.Println("Starting live.zoop.one API server on :8080")
 	log.Println("Guardial security protection enabled")
 	log.Fatal(r.Run(":8080"))
 }

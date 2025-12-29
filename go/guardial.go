@@ -1,12 +1,11 @@
 /**
- * Guardial Go SDK v0.2.0 - One-Liner Integration
+ * Guardial Go SDK v0.1.0 - Phase 1
  * OWASP Top 10 Detection & LLM Prompt Firewall
  *
- * Features:
- * - One-liner middleware: guardial.Middleware() for Gin/Echo
+ * Phase 1 Features:
  * - SecureHTTPClient wrapper for automatic security analysis
  * - PromptGuard for LLM prompt injection detection
- * - Auto-configuration from environment variables
+ * - Simple async processing
  * - Free Forever plan support (100K requests/month)
  */
 
@@ -20,7 +19,6 @@ import (
 	"io"
 	"net"
 	"net/http"
-	"os"
 	"strings"
 	"time"
 )
@@ -37,41 +35,11 @@ type Config struct {
 // DefaultConfig returns a default configuration
 func DefaultConfig() *Config {
 	return &Config{
-		Endpoint:   "https://api.guardial.in",
+		Endpoint:   "https://api.guardial.com",
 		CustomerID: "default",
 		Debug:      false,
 		Timeout:    30 * time.Second,
 	}
-}
-
-// ConfigFromEnv creates configuration from environment variables
-// Environment variables: GUARDIAL_API_KEY, GUARDIAL_ENDPOINT, GUARDIAL_CUSTOMER_ID, GUARDIAL_DEBUG
-func ConfigFromEnv() *Config {
-	config := DefaultConfig()
-	
-	if apiKey := os.Getenv("GUARDIAL_API_KEY"); apiKey != "" {
-		config.APIKey = apiKey
-	}
-	if endpoint := os.Getenv("GUARDIAL_ENDPOINT"); endpoint != "" {
-		config.Endpoint = endpoint
-	}
-	if customerID := os.Getenv("GUARDIAL_CUSTOMER_ID"); customerID != "" {
-		config.CustomerID = customerID
-	}
-	if debug := os.Getenv("GUARDIAL_DEBUG"); debug == "true" {
-		config.Debug = true
-	}
-	
-	return config
-}
-
-// NewClientFromEnv creates a new client from environment variables
-func NewClientFromEnv() (*Client, error) {
-	config := ConfigFromEnv()
-	if config.APIKey == "" {
-		return nil, fmt.Errorf("GUARDIAL_API_KEY environment variable is required")
-	}
-	return NewClient(config), nil
 }
 
 // SecurityEventRequest represents a request to be analyzed
@@ -351,26 +319,6 @@ func (c *Client) HealthCheck(ctx context.Context) (map[string]interface{}, error
 	}
 
 	return result, nil
-}
-
-// Test tests the SDK connection and configuration
-func (c *Client) Test(ctx context.Context) (map[string]interface{}, error) {
-	health, err := c.HealthCheck(ctx)
-	if err != nil {
-		return map[string]interface{}{
-			"success":   false,
-			"endpoint":  c.config.Endpoint,
-			"customerId": c.config.CustomerID,
-			"error":     err.Error(),
-		}, nil
-	}
-
-	return map[string]interface{}{
-		"success":    true,
-		"endpoint":   c.config.Endpoint,
-		"customerId": c.config.CustomerID,
-		"health":     health,
-	}, nil
 }
 
 // Helper methods

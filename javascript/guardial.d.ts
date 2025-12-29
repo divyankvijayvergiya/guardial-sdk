@@ -101,39 +101,6 @@ export declare class GuardialSDK {
    * Log messages (if debug enabled)
    */
   log(...args: any[]): void;
-  
-  /**
-   * Test the SDK connection and configuration
-   */
-  test(): Promise<{
-    success: boolean;
-    endpoint: string;
-    customerId: string;
-    health?: Record<string, unknown>;
-    error?: string;
-  }>;
 }
-
-export interface MiddlewareOptions {
-  excludePaths?: string[];
-  failOpen?: boolean;
-}
-
-/**
- * One-liner Express/Node.js middleware
- * Usage: app.use(guardial.middleware())
- */
-export declare function middleware(config?: GuardialConfig & MiddlewareOptions): (req: any, res: any, next: () => void) => Promise<void>;
-
-/**
- * Wrap global fetch for automatic protection
- * Usage: global.fetch = guardial.wrap(fetch)
- */
-export declare function wrap(fetchFn: typeof fetch, config?: GuardialConfig): typeof fetch;
-
-/**
- * Get configuration from environment variables
- */
-export declare function getConfigFromEnv(config?: GuardialConfig): GuardialConfig;
 
 export default GuardialSDK;

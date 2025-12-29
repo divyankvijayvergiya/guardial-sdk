@@ -1,7 +1,8 @@
-module github.com/divyankvijayvergiya/guardial-sdk/go
+module github.com/divyankvijayvergiya/guardial-sdk
 
 go 1.21
 
 require (
-	golang.org/x/net v0.17.0
+	github.com/gin-gonic/gin v1.9.1
+	github.com/gorilla/mux v1.8.0
 )

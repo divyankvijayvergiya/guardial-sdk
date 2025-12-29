@@ -1,6 +1,6 @@
 {
   "name": "guardial-js-sdk",
-  "version": "0.3.4",
+  "version": "0.1.0",
   "description": "Guardial JavaScript SDK - Real-time OWASP Top 10 Detection & LLM Prompt Firewall",
   "main": "guardial.js",
   "module": "guardial.js",
@@ -26,7 +26,7 @@
   ],
   "author": {
     "name": "Divyank Vijayvergiya",
-    "email": "divyank@guardial.in",
+    "email": "divyankvijayvergiya@gmail.com",
     "url": "https://github.com/divyankvijayvergiya"
   },
   "license": "MIT",
